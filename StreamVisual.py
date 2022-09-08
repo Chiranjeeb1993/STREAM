@@ -5,7 +5,7 @@ import plotly.express as px
 st.title("House Rent Dashboard")
 st.markdown('The dashboard will visualize the House Rent in India')
 
-df = pd.read_csv("D:\\DATASHEET\\House_Rent_Dataset.csv")
+df = pd.read_csv("House_Rent_Dataset.csv")
 st.write(df.head())
 option = st.selectbox('Chart',
                       ('Pie', 'Scatter', 'Bar Plot'))
