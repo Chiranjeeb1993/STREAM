@@ -7,6 +7,8 @@ st.markdown('The dashboard will visualize the House Rent in India')
 
 df = pd.read_csv("House_Rent_Dataset.csv")
 st.write(df.head())
+st.sidebar.success("Select a demo above.")
+
 option = st.selectbox('Chart',
                       ('Pie', 'Scatter', 'Bar Plot'))
 
